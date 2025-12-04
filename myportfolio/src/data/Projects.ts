@@ -72,7 +72,7 @@ export const projectsData: Project[] = [
     id: 6,
     title: 'Movie Night — Watchlist Builder',
     description: 'A dynamic movie discovery app built with React that empowers film lovers to find and organize their next watch. Users can search for any movie, browse by genre, and add films to a personal, persistent watchlist. The app features a clean UI that displays rich movie details like posters, ratings, and summaries, all powered by the TMDb API.',
-    imageUrl: '/MacBook Pro 16_ - 5.jpg', 
+    imageUrl: '/movie.png', 
     techStack: [
       'React.js',
       'Tailwind CSS', 
