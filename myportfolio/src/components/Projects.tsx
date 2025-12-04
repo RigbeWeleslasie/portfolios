@@ -1,4 +1,4 @@
-// src/components/Projects.tsx
+
 import { projectsData } from '@/data/Projects'
 import ProjectCard from './ProjectCard'
 

@@ -1,4 +1,4 @@
-// src/components/Navbar.tsx
+
 import Link from 'next/link'
 
 const Navbar = () => {
@@ -14,7 +14,6 @@ const Navbar = () => {
           <Link href="#skills" className="hover:text-blue-400">Skills</Link>
           <Link href="#contact" className="hover:text-blue-400">Contact</Link>
         </div>
-        {/* You can add a mobile menu button here later */}
       </div>
     </nav>
   )

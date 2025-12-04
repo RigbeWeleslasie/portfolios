@@ -1,4 +1,3 @@
-// src/components/Hero.tsx
 "use client";
 
 import { motion, useMotionValue, useTransform, useScroll } from "framer-motion";
@@ -54,7 +53,7 @@ const Hero = () => {
   }, []);
 
   const { scrollYProgress } = useScroll();
-  const y = useTransform(scrollYProgress, [0, 1], [0, -50]); // subtle parallax
+  const y = useTransform(scrollYProgress, [0, 1], [0, -50]); 
 
   return (
     <section
@@ -62,7 +61,6 @@ const Hero = () => {
       ref={containerRef}
       className="relative h-screen flex items-center justify-center bg-gradient-to-br from-black via-purple-900 to-blue-900 text-white text-center overflow-hidden font-mono"
     >
-      {/* Dynamic floating symbols that react subtly to mouse */}
       <FloatingSymbol delay={0} className="top-1/4 left-1/6 text-purple-400/70">
         &lt;/&gt;
       </FloatingSymbol>
@@ -75,8 +73,6 @@ const Hero = () => {
       <FloatingSymbol delay={3} className="bottom-1/4 right-1/4 text-green-400/70">
         {"{}"}
       </FloatingSymbol>
-
-      {/* Subtle code background */}
       <pre className="absolute inset-0 text-gray-700/10 text-xs sm:text-sm md:text-base font-mono whitespace-pre-wrap px-4 pointer-events-none z-0">
 {`const developer = {
   name: "Rigbe",
@@ -86,8 +82,6 @@ const Hero = () => {
 
 console.log(developer);`}
       </pre>
-
-      {/* Main content with scroll-based parallax */}
       <motion.div
         style={{ y }}
         className="relative z-10 max-w-4xl px-6 sm:px-8"
@@ -130,7 +124,7 @@ console.log(developer);`}
         >
           Rigbe Welu Weleslasie has built impactful projects like{" "}
           <span className="text-purple-300 font-semibold">SafiGreens</span> and{" "}
-          <span className="text-purple-300 font-semibold">Recos</span>  an AI-driven recruitment platform that automates scheduling, transcribes interviews in real-time, and delivers GenAI-powered candidate insights using Odoo, Google Calendar, and modern ML stacks.
+          <span className="text-purple-300 font-semibold">Recos</span>an AI-driven recruitment platform that automates scheduling, transcribes interviews in real-time, and delivers GenAI-powered candidate insights using Odoo, Google Calendar, and modern ML stacks.
         </motion.p>
 
         <motion.a
@@ -149,8 +143,6 @@ console.log(developer);`}
           View My Work
         </motion.a>
       </motion.div>
-
-      {/* Optional: subtle grid overlay for depth */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f10_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f10_1px,transparent_1px)] bg-[size:24px_24px] pointer-events-none z-0"></div>
     </section>
   );

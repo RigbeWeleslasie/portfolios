@@ -1,18 +1,14 @@
-// src/components/Skills.tsx
-import { skillsData, Skill } from '@/data/skills';
-import * as SiIcons from 'react-icons/si'; // Simple Icons pack
-import * as FaIcons from 'react-icons/fa'; // Font Awesome pack
 
-// A helper function to dynamically render the correct icon
+import { skillsData, Skill } from '@/data/skills';
+import * as SiIcons from 'react-icons/si'; 
+import * as FaIcons from 'react-icons/fa'; 
 const renderIcon = (iconName: string) => {
-  // Try to get the icon from the SiIcons or FaIcons libraries
   const IconComponent = (SiIcons as any)[iconName] || (FaIcons as any)[iconName];
 
   if (IconComponent) {
     return <IconComponent />;
   }
 
-  // Fallback for icons not found
   return <div className="w-8 h-8 bg-gray-600 rounded-full"></div>;
 };
 
@@ -21,12 +17,11 @@ const Skills = () => {
     <section id="skills" className="py-20 bg-gray-900 text-white">
       <div className="container mx-auto px-6">
         <h2 className="text-4xl font-bold text-center mb-4">My Skills</h2>
-        <p className="text-center text-gray-400 mb-12 max-w-2xl mx-auto">
+        <p className="text-center text-gray-400 mb-12 max-w-6xl mx-auto text-2xl">
           I've worked with a range of technologies in the web development and mobile development space. Here are the ones I'm most proficient in:
         </p>
 
         <div className="space-y-12">
-          {/* --- Frontend Skills --- */}
           <div>
             <h3 className="text-2xl font-semibold mb-6 text-center text-blue-400">Frontend Development</h3>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
@@ -43,8 +38,6 @@ const Skills = () => {
               ))}
             </div>
           </div>
-
-          {/* --- Backend Skills --- */}
           <div>
             <h3 className="text-2xl font-semibold mb-6 text-center text-green-400">Backend Development</h3>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
@@ -61,8 +54,6 @@ const Skills = () => {
               ))}
             </div>
           </div>
-
-          {/* --- Mobile Skills --- */}
           <div>
             <h3 className="text-2xl font-semibold mb-6 text-center text-purple-400">Mobile Development</h3>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
