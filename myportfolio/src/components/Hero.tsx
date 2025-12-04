@@ -130,7 +130,7 @@ console.log(developer);`}
         >
           Rigbe Welu Weleslasie has built impactful projects like{" "}
           <span className="text-purple-300 font-semibold">SafiGreens</span> and{" "}
-          <span className="text-purple-300 font-semibold">Recos</span>an AI-driven recruitment platform that automates scheduling, transcribes interviews in real-time, and delivers GenAI-powered candidate insights using Odoo, Google Calendar, and modern ML stacks.
+          <span className="text-purple-300 font-semibold">Recos</span>  an AI-driven recruitment platform that automates scheduling, transcribes interviews in real-time, and delivers GenAI-powered candidate insights using Odoo, Google Calendar, and modern ML stacks.
         </motion.p>
 
         <motion.a
