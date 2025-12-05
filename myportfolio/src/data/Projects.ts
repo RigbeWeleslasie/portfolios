@@ -40,8 +40,8 @@ export const projectsData: Project[] = [
     description: 'Comprehensive technical documentation for the Recos AI platform. Built for developers and API users, it includes detailed guides, API references, and code examples to facilitate integration.',
     imageUrl: '/Free_Laptop_Mockup 1.png', 
     techStack: ['Docusaurus', 'React', 'Markdown'], 
-    liveUrl: 'https://jacquelinenyinawabagesera.github.io/Recos-Technical-Documentation/',
-    githubUrl: 'https://github.com/yourusername/recos-docs', 
+    liveUrl: 'https://rigbeweleslasie.github.io/recos-technical-documentation/',
+    githubUrl: 'https://github.com/RigbeWeleslasie/recos-technical-documentation', 
   },
   {
     id: 4,

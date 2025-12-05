@@ -59,7 +59,7 @@ const Hero = () => {
     <section
       id="hero"
       ref={containerRef}
-      className="relative h-screen flex items-center justify-center bg-gradient-to-br from-black via-purple-900 to-blue-900 text-white text-center overflow-hidden font-mono"
+      className="relative h-screen flex items-center justify-center bg-gradient-to-br from-black bg-gray-900 text-white text-center overflow-hidden font-mono"
     >
       <FloatingSymbol delay={0} className="top-1/4 left-1/6 text-purple-400/70">
         &lt;/&gt;
@@ -124,7 +124,7 @@ console.log(developer);`}
         >
           Rigbe Welu Weleslasie has built impactful projects like{" "}
           <span className="text-purple-300 font-semibold">SafiGreens</span> and{" "}
-          <span className="text-purple-300 font-semibold">Recos</span>an AI-driven recruitment platform that automates scheduling, transcribes interviews in real-time, and delivers GenAI-powered candidate insights using Odoo, Google Calendar, and modern ML stacks.
+          <span className="text-purple-300 font-semibold">Recos</span>  an AI-driven recruitment platform that automates scheduling, transcribes interviews in real-time, and delivers GenAI-powered candidate insights using Odoo, Google Calendar, and modern ML stacks.
         </motion.p>
 
         <motion.a
